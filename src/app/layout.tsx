@@ -29,13 +29,14 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
       <div>
-        {" "}
         <Link href={"/"}> Home </Link> 
         <Link href={"/about"}> About </Link> 
         <Link href={"/contact"}> Contact </Link> 
         <Link href={"/users"}> User </Link> 
       </div>
         {children}
+
+      
       </body>
     </html>
   );
