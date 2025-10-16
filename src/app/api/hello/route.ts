@@ -10,7 +10,7 @@ export async function GET() {
 export async function POST(req: Request) {
 
     const data = await req.json()
-    const {} = data;
+    const {name} = data;
 
-    return NextResponse.json({message: "Hello from Api!"});
+    return NextResponse.json({message: `Hello ${name}, this was sent from the api!`});
 }
